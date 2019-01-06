@@ -12,7 +12,7 @@ class Solution(object):
             return self.rstr_
         elif(strs.__len__() == 1):
             return strs[0]
-        minitem = min(strs,key = lambda x:len(x))
+        minitem = min(strs, key = lambda x:len(x))
         minlen = len(minitem)
         for index in range(minlen):
             for i in range(len(strs)-1):
